@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Gerador Mensagem de Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script><-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.6.1.min.js"> </script>
+</head>
+<body>
+<div class="context">
+    <h1 class="titulo">Gerador de Mensagem de Aniversário dos Guri</h1><h5 class="V">v2.4</h5>
+    <form class="textos" autocomplete="off">
+        <h2>Digite o nome do seu amado aniversariante: </h2>
+        <div class="form-group">
+          <input type="nome" id="nomeInput" class="form-control" placeholder="Digite o Nome" required>
+          <small id="nomehelp" class="form-text">Vê se escreve direito</small>
+        </div>
+
+    <h2>Digite a cidade do amado aniversariante:  </h2>
+        <div class="form-group">
+            <input class="form-control" id="cidadeInput"  placeholder="Digite a Cidade">
+            <small class="form-text">OBS: Preencher cidades somente para Milton, Silvio, Roger e Álvaro. <br> Pois ambos não moram, mas sim se escondem.</small>
+        </div>
+
+    <h2>Coloque um Adjetivo/Xingamento:  </h2>
+        <div class="form-group">
+            <input class="form-control" id="adjInput"  placeholder="Chame o miltom de corno">
+            <small class="form-text "></small>
+        </div>
+
+    <h2>Adicione um nome Aleatorio no fim da mensagem:  </h2>
+        <div class="form-group">
+            <input class="form-control" id="msgInput"  placeholder="Digite o nome aleatorio desejado">
+            <small class="form-text">Sempre bom desejar um feliz aniversario para o Lobão</small>
+        </div>
+<!--
+    <h2>Selecione seu contato:  </h2>
+    <div class="form-group">
+        <select class="form-control" id="exampleFormControlSelect1" placeholder="Pai do Silvio">
+            <option>🗿P4ᘉㄒДN€¥r0$ 💩👮‍♂🚚</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+
+    </div>-->
+    <div class="enviar">
+        <!-- <a href="resultado.html"> -->
+        <button id="btnGerar" class="btnenviar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+            Exibir Mensagem
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+            </svg>
+        </button>
+        <script src="dados.js"></script>
+    </div>
+</div>
+
+ <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Sua Mensagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+         <div class="modal-body">
+            <center>
+            <h3 id="myLabel"></h3>
+            <h3 id="myLabel 2"></h3>
+            <h3 id="myLabel 3"></h3>
+            <h3 id="myLabel 4"></h3>
+            </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <!--
+          <button onclick="copiar()" type="button" class="btn btn-primary">Copiar Mensagem</button>
+          <button type="button" class="btn btn-primary">Enviar Mensagem</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!--<small class="form-text">*Necessário estar logado no WhatsApp Web pelo seu navegador padrão</small> -->
+    <div class="area" >
+        <ul class="circles">
+            <li></li>
+            <li><img src="img/Perera.jpg"></li>
+            <li><img src="img/Cilvo HEH.jpg"></li>
+            <li><img src="img/Gilmar.png"></li>
+            <li><img src="img/Jão.png"></li>
+            <li><img src="img/miltom.png"></li>
+            <li><img src="img/paulinho.png"></li>
+            <li><img src="img/Pinguço.png"></li>
+            <li><img src="img/Lobão.png"></li>
+            <li><img src="img/Perera 2.jpg"></li>
+    </ul>
+  </div>
+
+  
+    <!--
+    <py-script>
+        import pywhatkit as w
+        import keyboard as k
+        import time
+        print("\t\t\t**Bem vindo ao Gerador de Mensagem de Aniversario dos Guri v1.42**")
+        
+        nome = str(input ("\n\nDigite o nome do seu amado aniversariante: "))
+        cidade = str(input ("\n\nOBS: Preencher cidades somente para Milton, Silvio, Roger e Álvaro. \nPois ambos não moram se escondem.\n\nDigite a cidade do amado aniversariante: "))
+        adj = str(input ("\n\nColoque um Adjetivo/Xingamento (Opcional,ENTER p/ Pular): "))
+        nomeAleatorio = str(input ("\n\nAdicione um nome Aleatorio no fim da mensagem: "))
+        contatoMenu = str(input("\n(Numeros Atualizados em 27/04)\n1-Grupo Pantaneiros\n2-Jão\n3-Lobão\n4-Cilvão\n5-Ximira\n6-Pererinha\n7-Gilson\n8-Miltom: \nEscolha seu contato: "))
+        
+        
+        if(adj==""):
+            print("\n\n====Sua Mensagem de Aniversario====\n")
+            mensagem= str(f'\nFeliz aniversário {nome} que vc possa cair mais vezes de bike na minha frente e que vc abra assas do mundo do {cidade} para o mundo real para cair mais vezes na minha frente feliz aniversário {nomeAleatorio}')
+            print(mensagem)
+        else:
+            print("\n\n====Sua Mensagem de Aniversario====\n")
+            mensagem= str(f'\nFeliz aniversário {nome} que vc possa cair mais vezes de bike na minha frente e que vc abra assas do mundo do {cidade} para o mundo real para cair mais vezes na minha frente seu {adj} feliz aniversário {nomeAleatorio}')
+            print(mensagem)
+        
+        
+        print("\n\n\n**Aperte ENTER para Enviar mensagem**\nÉ Necessário estar logado no WhatsApp pelo seu navegador padrão")
+        input()
+        
+        #Grupo
+        if(contatoMenu=="1"):
+            w.sendwhatmsg_to_group_instantly("🗿P4ᘉㄒДN€¥r0$ 💩👮‍♂🚚",(mensagem))
+        #Jão
+        elif(contatoMenu=="2"):
+            w.sendwhatmsg_instantly("+55 51 9912-6422", (mensagem))
+        #Lobão
+        elif(contatoMenu=="3"):
+            w.sendwhatmsg_instantly("+55 51 9888-4593", (mensagem))
+         #Cilvão
+        elif(contatoMenu=="4"):
+            w.sendwhatmsg_instantly("+55 51 8226-3629", (mensagem))
+        #Ximira
+        elif(contatoMenu=="5"):
+            w.sendwhatmsg_instantly("+55 51 9990-0628", (mensagem))
+        #Pererinha
+        elif(contatoMenu=="6"):
+            w.sendwhatmsg_instantly("+55 51 9583-1024", (mensagem))
+        #Gilson
+        elif(contatoMenu=="7"):
+            w.sendwhatmsg_instantly("+55 51 99581-2938", (mensagem))
+        #Miltom
+        elif(contatoMenu=="8"):
+            w.sendwhatmsg_instantly("+55 51 9130-4088", (mensagem))
+
+        #Tempo p/ abrir
+        time.sleep(28)
+        pyautogui.click()
+        time.sleep(2)
+        #Envia a MSG
+        k.press_and_release('enter')
+        #Fechar Guia
+        k.press_and_release('ctrl+w')
+        #Confirma Fechar Guia
+        k.press_and_release('enter')
+    </py-script> -->
+
+    
+    <!--
+    <input type="submit" onclick="showInput();"><br/>
+     <label>Your input: </label>
+    <p><span id='display'></span></p>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+    
+
+</html>
