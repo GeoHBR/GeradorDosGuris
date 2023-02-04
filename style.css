@@ -21,9 +21,16 @@
   .form-control{
     text-align: center;
   }
+  .Footer{
+  text-align: center;
+  }
   .btn-primary{
     background-color: #595fcc !important;
-    border-color: #595fcc !important;;
+    border-color: #595fcc !important;
+  }
+  .btnCopiar{
+    background-color: #595fcc !important;
+    border-color: #595fcc !important;
   }
   .V{
     margin: auto;

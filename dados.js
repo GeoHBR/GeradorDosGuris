@@ -1,6 +1,7 @@
     
     $(function () {
         $('[data-toggle="popover"]').popover()
+        sanitize: false
       })
 
     document.addEventListener("DOMContentLoaded", function() {
