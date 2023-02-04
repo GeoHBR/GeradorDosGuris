@@ -1,3 +1,8 @@
+    
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+
     document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("btnGerar").onclick = function(){
@@ -25,6 +30,7 @@
           btnCopiar.addEventListener("click", function() {
             if (resultado) {
               navigator.clipboard.writeText(resultado.textContent).then(function() {
+                var feedback = document.getElementById("feedback");
                 console.log("Texto copiado com sucesso: " + resultado);
               }, function(error) {
                 console.error("Erro ao copiar o texto: " + error);

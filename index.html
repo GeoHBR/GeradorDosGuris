@@ -21,10 +21,25 @@
     <meta name="twitter:image:src" content="https://i.imgur.com/1krWkrq.png">
     <meta name="theme-color" content="#595fcc">
     <script src="dados.js"></script>
-</head>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head> 
+   <div class="area" >
+    <ul class="circles">
+        <li></li>
+        <li><img src="img/Perera.jpg"></li>
+        <li><img src="img/Cilvo HEH.jpg"></li>
+        <li><img src="img/Gilmar.png"></li>
+        <li><img src="img/Jão.png"></li>
+        <li><img src="img/miltom.png"></li>
+        <li><img src="img/paulinho.png"></li>
+        <li><img src="img/Pinguço.png"></li>
+        <li><img src="img/Lobão.png"></li>
+        <li><img src="img/Perera 2.jpg"></li>
+    </ul>
 <body>
+
 <div class="context">
-    <h1 class="titulo">Gerador de Mensagem de Aniversário dos Guris</h1><h5 class="V">v2.52</h5>
+    <h1 class="titulo">Gerador de Mensagem de Aniversário dos Guris</h1><h5 class="V">v2.55</h5>
     <form class="textos" autocomplete="off">
         <h2>Digite o nome do seu amado aniversariante: </h2>
         <div class="form-group">
@@ -49,20 +64,8 @@
             <input class="form-control" id="msgInput"  placeholder="Digite o nome aleatorio desejado">
             <small class="form-text">Sempre bom desejar um feliz aniversario para o Lobão</small>
         </div>
-<!--
-    <h2>Selecione seu contato:  </h2>
-    <div class="form-group">
-        <select class="form-control" id="exampleFormControlSelect1" placeholder="Pai do Silvio">
-            <option>🗿P4ᘉㄒДN€¥r0$ 💩👮‍♂🚚</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            </select>
 
-    </div>-->
     <div class="enviar">
-        <!-- <a href="resultado.html"> -->
         <button id="btnGerar" class="btnenviar" type="button" data-toggle="modal" data-target="#exampleModalCenter">
             Exibir Mensagem
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
@@ -71,10 +74,8 @@
         </button>
         <script src="dados.js"></script>
     </div>
-</div>
-
  <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -91,7 +92,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 
-          <button id="btnCopiar" type="button" class="btn btn-primary">
+          <button id="btnCopiar" type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Texto copiado com sucesso!">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
               <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
@@ -108,27 +109,17 @@
           </button>
         </div>
         <center>
-        <small id="TxtZap" class="form-text text-muted">*Para Compartilhar a mensagem no Whatsapp é necessário estar logado no Whatsapp Web ou possui-lo instalado</small>
+        <small id="TxtZap" class="form-text text-muted">*Para Compartilhar a mensagem no Whatsapp é necessário estar logado no Whatsapp Web</small>
       </center>
       </div>
     </div>
   </div>
-    <div class="area" >
-        <ul class="circles">
-            <li></li>
-            <li><img src="img/Perera.jpg"></li>
-            <li><img src="img/Cilvo HEH.jpg"></li>
-            <li><img src="img/Gilmar.png"></li>
-            <li><img src="img/Jão.png"></li>
-            <li><img src="img/miltom.png"></li>
-            <li><img src="img/paulinho.png"></li>
-            <li><img src="img/Pinguço.png"></li>
-            <li><img src="img/Lobão.png"></li>
-            <li><img src="img/Perera 2.jpg"></li>
-    </ul>
-  </div>
+</div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+
+  </body>
+</div>
 </html>
