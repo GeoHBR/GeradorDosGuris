@@ -19,7 +19,6 @@ let username;
         window.open("https://api.whatsapp.com/send?text=" + mensagem);
       });
 
-
     document.getElementById("btnCopiar").addEventListener("click", function() {
         // código para copiar o texto para a área de transferência
     });
@@ -31,6 +30,7 @@ let username;
           console.error("Erro ao copiar o texto para a área de transferência:", err);
         });
       });
+    
       
       
 
