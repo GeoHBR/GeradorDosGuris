@@ -36,6 +36,7 @@
     border: none;
     border-radius: 12px;
   }
+ 
   .enviar{
     text-align: center;
   }
@@ -126,7 +127,10 @@
     text-align: center;
     color: #fff;
 }
-
+.TxtZap{
+  text-align: center;
+  color:rgba(255, 255, 255, 0.089)
+}
 
 .area{
     background: #595fcc;  
