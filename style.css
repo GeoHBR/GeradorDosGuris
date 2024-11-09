@@ -5,6 +5,12 @@
     text-align: auto;
     color: #fff;
   }
+  .centralizadora{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
   h1 {
     text-shadow: 2px 2px #00000027;
   }
@@ -50,6 +56,18 @@
     font-size: 16px;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
+
+  }
+  .btncalendario{
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
   }
  
   .enviar{
